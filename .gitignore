@@ -1,0 +1,8 @@
+bin/
+obj/
+*.suo
+*.user
+*.ReSharper.user
+*.exe
+*.nupkg
+*.pdb

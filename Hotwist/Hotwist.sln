@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist", "Hotwist\Hotwist.csproj", "{EF70B959-0C26-4217-862C-16D5A9AF461B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Tests", "Hotwist.Tests\Hotwist.Tests.csproj", "{86CE4A38-C57C-4930-8C59-E6ED0B998D63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Dominio", "Hotwist.Dominio\Hotwist.Dominio.csproj", "{BEBDE9B3-28E5-4941-B225-23CC6714E86E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Repositorio", "Hotwist.Repositorio\Hotwist.Repositorio.csproj", "{42E5A03B-C736-4BA3-83EE-FEDBEB5E7BD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Interfaces", "Hotwist.Interfaces\Hotwist.Interfaces.csproj", "{28D48C99-2296-43B1-9DB9-5726DE0B7463}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serviços", "Serviços", "{9E6052B6-ACF6-4007-96EF-1DE9EC6C77EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Web", "Hotwist.Web\Hotwist.Web.csproj", "{8F97900E-FC97-47A7-809F-35E5715CD9EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Servico.Twitter", "Servicos\Hotwist.Servico.Twitter\Hotwist.Servico.Twitter.csproj", "{BD6377A4-2E6D-4E18-AA56-042EEC4BCE56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF70B959-0C26-4217-862C-16D5A9AF461B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF70B959-0C26-4217-862C-16D5A9AF461B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF70B959-0C26-4217-862C-16D5A9AF461B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF70B959-0C26-4217-862C-16D5A9AF461B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{86CE4A38-C57C-4930-8C59-E6ED0B998D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{86CE4A38-C57C-4930-8C59-E6ED0B998D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CE4A38-C57C-4930-8C59-E6ED0B998D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,12 +31,19 @@ Global
 		{42E5A03B-C736-4BA3-83EE-FEDBEB5E7BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E5A03B-C736-4BA3-83EE-FEDBEB5E7BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E5A03B-C736-4BA3-83EE-FEDBEB5E7BD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28D48C99-2296-43B1-9DB9-5726DE0B7463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28D48C99-2296-43B1-9DB9-5726DE0B7463}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28D48C99-2296-43B1-9DB9-5726DE0B7463}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28D48C99-2296-43B1-9DB9-5726DE0B7463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F97900E-FC97-47A7-809F-35E5715CD9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F97900E-FC97-47A7-809F-35E5715CD9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F97900E-FC97-47A7-809F-35E5715CD9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F97900E-FC97-47A7-809F-35E5715CD9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6377A4-2E6D-4E18-AA56-042EEC4BCE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6377A4-2E6D-4E18-AA56-042EEC4BCE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6377A4-2E6D-4E18-AA56-042EEC4BCE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6377A4-2E6D-4E18-AA56-042EEC4BCE56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD6377A4-2E6D-4E18-AA56-042EEC4BCE56} = {9E6052B6-ACF6-4007-96EF-1DE9EC6C77EA}
 	EndGlobalSection
 EndGlobal
