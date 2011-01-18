@@ -1,0 +1,5 @@
+C:\Users\waldyr\hotwist\Hotwist\Hotwist\bin\Hotwist.dll
+C:\Users\waldyr\hotwist\Hotwist\Hotwist\bin\Hotwist.pdb
+C:\Users\waldyr\hotwist\Hotwist\Hotwist\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\waldyr\hotwist\Hotwist\Hotwist\obj\Debug\Hotwist.dll
+C:\Users\waldyr\hotwist\Hotwist\Hotwist\obj\Debug\Hotwist.pdb

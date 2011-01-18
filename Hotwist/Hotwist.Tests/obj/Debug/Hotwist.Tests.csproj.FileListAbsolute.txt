@@ -1,0 +1,8 @@
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.dll.config
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.dll
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.pdb
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.dll
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.pdb
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\obj\Debug\Hotwist.Tests.dll
+C:\Users\waldyr\hotwist\Hotwist\Hotwist.Tests\obj\Debug\Hotwist.Tests.pdb
