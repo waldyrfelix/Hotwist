@@ -1,40 +1,42 @@
 body
 {
     font-size: 75%;
-    font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+    font-family: "Helvetica Neue" ,Arial,Sans-serif;
     color: #232323;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
 
-fieldset 
+fieldset
 {
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
 }
 
-legend 
+legend
 {
-    font-size:1.2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-textarea 
+textarea
 {
     min-height: 75px;
 }
 
-.editor-label 
+.editor-label
 {
     margin: 1em 0 0 0;
 }
 
-.editor-field 
+.editor-field
 {
-    margin:0.5em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 
@@ -65,4 +67,54 @@ textarea
 .validation-summary-valid
 {
     display: none;
+}
+
+/* Layout master page
+--------------------------------------------------------*/
+
+#top
+{
+    background: url("images/top.gif") no-repeat scroll left center #2b4b6c;
+    height: 60px;
+}
+
+#top h1
+{
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    filter: alpha(opacity=0);
+}
+#main
+{
+    padding: 10px;
+}
+
+#main h2
+{
+    color: #990000;
+    margin: 5px;
+}
+
+#foo
+{
+    height: 31px;
+}
+
+#foo-left
+{
+    background: url("images/foo-left.gif") repeat scroll 0 0 transparent;
+    float: left;
+    height: 31px;
+    width: 39px;
+}
+
+#foo-right
+{
+    background: url("images/foo-right.gif") repeat scroll 0 0 transparent;
+    color: #990000;
+    font-size: smaller;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
 }

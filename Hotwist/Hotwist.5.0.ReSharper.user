@@ -7,8 +7,26 @@
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Views/f:_ViewStart.cshtml" caret="49" fromTop="0" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1572" fromTop="15" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Views/d:Shared/f:_Layout.cshtml" caret="492" fromTop="14" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Views/d:Home/f:Index.cshtml" caret="104" fromTop="6" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Controllers/f:HomeController.cs" caret="289" fromTop="13" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="6" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Views/d:Home/f:Index.cshtml" caret="104" fromTop="6" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="10" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="22" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="25" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="2" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="28" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="25" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Views/d:Shared/f:_Layout.cshtml" caret="492" fromTop="14" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="1784" fromTop="15" />
+      <File id="8F97900E-FC97-47A7-809F-35E5715CD9EB/d:Content/f:Site.css" caret="0" fromTop="0" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
