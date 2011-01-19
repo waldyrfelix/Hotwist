@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Dominio", "Hotwist.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Repositorio", "Hotwist.Repositorio\Hotwist.Repositorio.csproj", "{42E5A03B-C736-4BA3-83EE-FEDBEB5E7BD7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serviços", "Serviços", "{9E6052B6-ACF6-4007-96EF-1DE9EC6C77EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicos", "Servicos", "{9E6052B6-ACF6-4007-96EF-1DE9EC6C77EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotwist.Web", "Hotwist.Web\Hotwist.Web.csproj", "{8F97900E-FC97-47A7-809F-35E5715CD9EB}"
 EndProject
