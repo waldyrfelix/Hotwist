@@ -10,3 +10,9 @@ D:\Projetos\Hotwist\Hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.pdb
 D:\Projetos\Hotwist\Hotwist\Hotwist\Hotwist.Tests\obj\Debug\ResolveAssemblyReference.cache
 D:\Projetos\Hotwist\Hotwist\Hotwist\Hotwist.Tests\obj\Debug\Hotwist.Tests.dll
 D:\Projetos\Hotwist\Hotwist\Hotwist\Hotwist.Tests\obj\Debug\Hotwist.Tests.pdb
+C:\Users\CampusParty\Desenvolvimento\Hotwist\Hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.dll.config
+C:\Users\CampusParty\Desenvolvimento\Hotwist\Hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.dll
+C:\Users\CampusParty\Desenvolvimento\Hotwist\Hotwist\Hotwist\Hotwist.Tests\bin\Debug\Hotwist.Tests.pdb
+C:\Users\CampusParty\Desenvolvimento\Hotwist\Hotwist\Hotwist\Hotwist.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CampusParty\Desenvolvimento\Hotwist\Hotwist\Hotwist\Hotwist.Tests\obj\Debug\Hotwist.Tests.dll
+C:\Users\CampusParty\Desenvolvimento\Hotwist\Hotwist\Hotwist\Hotwist.Tests\obj\Debug\Hotwist.Tests.pdb
