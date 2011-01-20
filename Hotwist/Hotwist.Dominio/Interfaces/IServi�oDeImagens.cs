@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Hotwist.Dominio.Interfaces
 {
-    interface IServiçoDeImagens
+    public interface IServiçoDeImagens
     {
-        Stream GerarThumbnail(Stream imagemOriginal, Size proporção);
-        Stream ColocarLogoAImagem(Stream imagem, Stream logo, Posição posição);
+        Image ColocarLogoAImagem(Image imagem, Image logo, Posição posição);
+        Point CalcularPosição(Posição posição, Size tamanhoImage, Size tamanhoLogo);
     }
 }
