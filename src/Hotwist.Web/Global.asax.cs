@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Fusonic.Web.Mvc.RuntimeController;
+using Hotwist.Web.Infra;
 
 namespace Hotwist.Web
 {
@@ -35,6 +37,9 @@ namespace Hotwist.Web
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            RuntimeControllerFactory factory = new RuntimeControllerFactory(new RuntimeDependencyInjector());
+            ControllerBuilder.Current.SetControllerFactory(factory);
         }
     }
 }
