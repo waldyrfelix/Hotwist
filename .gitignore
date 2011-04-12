@@ -1,6 +1,7 @@
 bin/
 obj/
-TestResults/
+src/TestResults/
+src/Hotwist.Web/Content/uploads/
 *.suo
 *.user
 *.ReSharper.user

@@ -1,7 +1,26 @@
 ﻿@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Hotwist - Make avatar";
 }
-
-<h2>@ViewBag.Teste</h2>
-
+<h2>@ViewBag.Title</h2>
+<div id="conteudo">
+    <fieldset>
+        <legend>1ª Etapa - Escolha a logo</legend>
+        @using (Html.BeginForm("Upload", "Home", 
+            FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="file" name="logo" id="logo" />
+            <button type="submit" id="carregar-logo">Carregar logo</button>
+        }
+    </fieldset>
+    <fieldset>
+        <legend>2ª Etapa - Escolha o destino</legend>
+        <button type="button">
+            Twitter</button>
+    </fieldset>
+    <fieldset>
+        <legend>3ª Etapa - Posicione a logo</legend>
+        <img src="#" alt="Alternate Text" width="90" height="120" />
+        <button type="button" id="salvar">
+            Salvar</button>
+    </fieldset>
+</div>

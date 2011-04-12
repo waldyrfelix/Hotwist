@@ -118,3 +118,8 @@ textarea
     line-height: 30px;
     text-align: center;
 }
+
+#conteudo 
+{
+    width: 50%    
+}
