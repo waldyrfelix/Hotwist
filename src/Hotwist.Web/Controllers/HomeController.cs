@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.IO;
+using Hotwist.Web.ViewModels;
 
 namespace Hotwist.Web.Controllers
 {
@@ -11,7 +12,7 @@ namespace Hotwist.Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View(new LogoUploadViewModel());
         }
 
         public ActionResult Upload(HttpPostedFileBase logo)
@@ -19,7 +20,10 @@ namespace Hotwist.Web.Controllers
             string caminho = Server.MapPath("~/Content/uploads");
             logo.SaveAs(Path.Combine(caminho, logo.FileName));
 
-            return new EmptyResult();
+            var viewModel = new LogoUploadViewModel();
+            viewModel.UrlDaImagem = "/Content/uploads/" + logo.FileName;
+
+            return View("Index", viewModel);
         }
     }
 }

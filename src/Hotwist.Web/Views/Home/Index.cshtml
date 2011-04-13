@@ -1,15 +1,25 @@
-﻿@{
+﻿@model Hotwist.Web.ViewModels.LogoUploadViewModel
+@{
     ViewBag.Title = "Hotwist - Make avatar";
 }
 <h2>@ViewBag.Title</h2>
 <div id="conteudo">
     <fieldset>
         <legend>1ª Etapa - Escolha a logo</legend>
-        @using (Html.BeginForm("Upload", "Home", 
+        @using (Html.BeginForm("Upload", "Home",
             FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
             <input type="file" name="logo" id="logo" />
             <button type="submit" id="carregar-logo">Carregar logo</button>
+        }
+
+        @if (!String.IsNullOrEmpty(Model.UrlDaImagem))
+        {
+            <div id="logo">
+                <h4>
+                    Pré visualização</h4>
+                <img src="@Model.UrlDaImagem" />
+            </div>
         }
     </fieldset>
     <fieldset>
