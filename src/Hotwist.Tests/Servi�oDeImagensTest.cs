@@ -5,14 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using Hotwist.Dominio;
 using Hotwist.Dominio.Interfaces;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace Hotwist.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ServiçoDeImagensTest
     {
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Centro_Devolve_Coordenadas_Do_Centro_Horizontal_E_Vertical()
         {
             // arrange
@@ -28,7 +28,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(30, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_Em_Cima_Devolve_Coordenadas_Do_Centro_Horizontal_E_Topo_Vertical()
         {
             // arrange
@@ -44,7 +44,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(0, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_Em_Baixo_Devolve_Coordenadas_Do_Centro_Horizontal_E_Base_Vertical()
         {
             // arrange
@@ -60,7 +60,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(63, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Lado_Esquerdo_Devolve_Coordenadas_Da_Esquerda_Horizontal_E_Centro_Vertical()
         {
             // arrange
@@ -76,7 +76,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(95, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Lado_Direito_Devolve_Coordenadas_Da_Direita_Horizontal_E_Centro_Vertical()
         {
             // arrange
@@ -92,7 +92,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(95, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Canto_Superior_Esquerdo_Devolve_Coordenadas_Da_Esquerda_Horizontal_E_Topo_Vertical()
         {
             // arrange
@@ -109,7 +109,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(0, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Canto_Inferior_Esquerdo_Devolve_Coordenadas_Da_Esquerda_Horizontal_E_Base_Vertical()
         {
             // arrange
@@ -126,7 +126,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(370, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Canto_Inferior_Direito_Devolve_Coordenadas_Da_Direita_Horizontal_E_Base_Vertical()
         {
             // arrange
@@ -143,7 +143,7 @@ namespace Hotwist.Tests
             Assert.AreEqual(370, coordenadas.Y);
         }
 
-        [TestMethod]
+        [Test]
         public void Quando_Passo_Logo_No_Canto_Superior_Direito_Devolve_Coordenadas_Da_Direita_Horizontal_E_Topo_Vertical()
         {
             // arrange

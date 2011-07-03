@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="86CE4A38-C57C-4930-8C59-E6ED0B998D63" ModuleId="Hotwist.Tests" />
+  <Module PersistentId="BEBDE9B3-28E5-4941-B225-23CC6714E86E" ModuleId="Hotwist.Dominio" />
+  <Module PersistentId="8F97900E-FC97-47A7-809F-35E5715CD9EB" ModuleId="Hotwist.Web" />
+</Modules>
