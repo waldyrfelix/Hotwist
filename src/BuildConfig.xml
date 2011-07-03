@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="Build">
+  
+  <UsingTask TaskName="TransformXml"
+               AssemblyFile="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\Web\Microsoft.Web.Publishing.Tasks.dll"/>
 
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,14 +12,41 @@
   <ItemGroup>
     <BuildDir Include=".\build\" />
     <SolutionFile Include=".\Hotwist.sln" />
+    
+    <PackageFile Include=".\build\_PublishedWebsites\Hotwist.Web_Package\Hotwist.Web.zip" />
+    <MsDeploy Include="..\tools\Microsoft Web Deploy\msdeploy.exe" />
+
+    <NUnit Include="..\tools\NUnit\nunit-console-x86.exe" />
+    <TestAssembly Include=".\build\Hotwist.Tests.dll" />
+    <TestResult Include=".\build\TestResults.xml" />
   </ItemGroup>
+  
+  
   <Target Name="Clean">
     <RemoveDir Directories="@(BuildDir)" />
   </Target>
+
   <Target Name="Init">
     <MakeDir Directories="@(BuildDir)" />
   </Target>
+
   <Target Name="Build" DependsOnTargets="Clean;Init">
     <MSBuild Projects="@(SolutionFile)" Properties="OutDir=%(BuildDir.FullPath);Configuration=$(Configuration)" />
+  </Target>
+
+  <Target Name="Test" DependsOnTargets="Build">
+    <Exec Command="@(NUnit) @(TestAssembly) /xml=@(TestResult)" />
+  </Target>
+  
+  
+  <Target Name="Package" DependsOnTargets="Clean;Init">
+    <MSBuild Projects="@(SolutionFile)" Properties="OutDir=%(BuildDir.FullPath);DeployOnBuild=True;DeployTarget=Package;Configuration=$(Configuration)" />
+  </Target>
+  
+  <Target Name="Deploy" DependsOnTargets="Package">
+    <PropertyGroup>
+      <Source>%(PackageFile.FullPath)</Source>
+    </PropertyGroup>
+    <Exec Command='"@(MsDeploy)" -verb:sync -source:package="$(Source)" -dest:iisApp=Hotwist,computerName=waldyr-note' />
   </Target>
 </Project>
