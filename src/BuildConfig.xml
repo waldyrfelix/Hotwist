@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="Build">
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <BuildDir Include=".\build\" />
+    <SolutionFile Include=".\Hotwist.sln" />
+  </ItemGroup>
+  <Target Name="Clean">
+    <RemoveDir Directories="@(BuildDir)" />
+  </Target>
+  <Target Name="Init">
+    <MakeDir Directories="@(BuildDir)" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="Clean;Init">
+    <MSBuild Projects="@(SolutionFile)" Properties="OutDir=%(BuildDir.FullPath);Configuration=$(Configuration)" />
+  </Target>
+</Project>
