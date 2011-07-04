@@ -47,6 +47,6 @@
     <PropertyGroup>
       <Source>%(PackageFile.FullPath)</Source>
     </PropertyGroup>
-    <Exec Command='"@(MsDeploy)" -verb:sync -source:contentPath="$(Source)" -dest:iisApp=Hotwist,computerName=buildserver,userName=waldyr,password=Whfs3856' />
+    <Exec Command='"@(MsDeploy)" -verb:sync -source:package="$(Source)" -dest:iisApp=Hotwist,computerName=waldyr-note,userName=waldyr,password=Whfs3856' />
   </Target>
 </Project>
